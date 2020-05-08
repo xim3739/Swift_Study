@@ -10,8 +10,11 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+    let STATUS_PLAY = 0
+    let STATUS_PAUSE = 1
+    let STATUS_STOP = 2
+    let STATUS_RECORD = 3
     let MAX_VOLUME: Float = 10.0
-    
     let timePlayerSelector:Selector = #selector(ViewController.updatePlayTime)
     let timeRecordSelector:Selector = #selector(ViewController.updateRecordTime)
     
@@ -30,6 +33,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     @IBOutlet weak var sliderVolume: UISlider!
     @IBOutlet weak var btnRecord: UIButton!
     @IBOutlet weak var lblRecordTime: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,21 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
             lblRecordTime.isEnabled = false
         } else {
             initRecord()
+        }
+    }
+    
+    func changeImage(status: Int) {
+        switch status {
+        case STATUS_PLAY:
+            imageView.image = UIImage(named: "pic1.png")
+        case STATUS_PAUSE:
+            imageView.image = UIImage(named: "pic2.png")
+        case STATUS_STOP:
+            imageView.image = UIImage(named: "pic3.png")
+        case STATUS_RECORD:
+            imageView.image = UIImage(named: "pic4.png")
+        default:
+            print("Error")
         }
     }
     
@@ -124,11 +143,13 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
         audioPlayer.play()
         setPlayButtons(false, pause: true, stop: true)
         progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: timePlayerSelector, userInfo: nil, repeats: true)
+        changeImage(status: STATUS_PLAY)
         
     }
     @IBAction func btnPause(_ sender: UIButton) {
         audioPlayer.pause()
         setPlayButtons(true, pause: false, stop: true)
+        changeImage(status: STATUS_PAUSE)
     }
     @IBAction func btnStopAudio(_ sender: UIButton) {
         audioPlayer.stop()
@@ -136,6 +157,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
         lblCurrentTime.text = convertNSTimerInterval12String(0)
         setPlayButtons(true, pause: false, stop: false)
         progressTimer.invalidate()
+        changeImage(status: STATUS_STOP)
     }
     @IBAction func slChangVolume(_ sender: UISlider) {
         audioPlayer.volume = sliderVolume.value
@@ -167,12 +189,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
             audioRecorder.record()
             sender.setTitle("Stop", for: UIControl.State())
             progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: timeRecordSelector, userInfo: nil, repeats: true)
+            
+            changeImage(status: STATUS_RECORD)
         } else {
             audioRecorder.stop()
             progressTimer.invalidate()
             sender.setTitle("Record", for: UIControl.State())
             btnPlay.isEnabled = true
             initPlay()
+            
+            changeImage(status: STATUS_STOP)
         }
     }
     

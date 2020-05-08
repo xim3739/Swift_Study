@@ -7,35 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		263ACA862464FF2600983B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263ACA852464FF2600983B56 /* AppDelegate.swift */; };
-		263ACA882464FF2600983B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263ACA872464FF2600983B56 /* ViewController.swift */; };
-		263ACA8B2464FF2600983B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA892464FF2600983B56 /* Main.storyboard */; };
-		263ACA8D2464FF2800983B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA8C2464FF2800983B56 /* Assets.xcassets */; };
-		263ACA902464FF2800983B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA8E2464FF2800983B56 /* LaunchScreen.storyboard */; };
-		263ACA982465188B00983B56 /* sky_of_night.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA972465188B00983B56 /* sky_of_night.mp3 */; };
-		263ACA9D24651D7500983B56 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA9924651D7400983B56 /* pic1.png */; };
-		263ACA9E24651D7500983B56 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA9A24651D7400983B56 /* pic2.png */; };
-		263ACA9F24651D7500983B56 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA9B24651D7500983B56 /* pic3.png */; };
-		263ACAA024651D7500983B56 /* pic4.png in Resources */ = {isa = PBXBuildFile; fileRef = 263ACA9C24651D7500983B56 /* pic4.png */; };
+		263ACAD22465411D00983B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263ACAD12465411D00983B56 /* AppDelegate.swift */; };
+		263ACAD42465411D00983B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263ACAD32465411D00983B56 /* ViewController.swift */; };
+		263ACAD72465411D00983B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263ACAD52465411D00983B56 /* Main.storyboard */; };
+		263ACAD92465412100983B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263ACAD82465412100983B56 /* Assets.xcassets */; };
+		263ACADC2465412100983B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 263ACADA2465412100983B56 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		263ACA822464FF2600983B56 /* AVAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		263ACA852464FF2600983B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		263ACA872464FF2600983B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		263ACA8A2464FF2600983B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		263ACA8C2464FF2800983B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		263ACA8F2464FF2800983B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		263ACA912464FF2800983B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		263ACA972465188B00983B56 /* sky_of_night.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sky_of_night.mp3; sourceTree = "<group>"; };
-		263ACA9924651D7400983B56 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic1.png; path = ../../PickerView/PickerView/images/pic1.png; sourceTree = "<group>"; };
-		263ACA9A24651D7400983B56 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic2.png; path = ../../PickerView/PickerView/images/pic2.png; sourceTree = "<group>"; };
-		263ACA9B24651D7500983B56 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic3.png; path = ../../PickerView/PickerView/images/pic3.png; sourceTree = "<group>"; };
-		263ACA9C24651D7500983B56 /* pic4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pic4.png; path = ../../PickerView/PickerView/images/pic4.png; sourceTree = "<group>"; };
+		263ACACE2465411D00983B56 /* UIImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		263ACAD12465411D00983B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		263ACAD32465411D00983B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		263ACAD62465411D00983B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		263ACAD82465412100983B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		263ACADB2465412100983B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		263ACADD2465412100983B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		263ACA7F2464FF2600983B56 /* Frameworks */ = {
+		263ACACB2465411D00983B56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,76 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		263ACA792464FF2600983B56 = {
+		263ACAC52465411D00983B56 = {
 			isa = PBXGroup;
 			children = (
-				263ACA842464FF2600983B56 /* AVAudioPlayer */,
-				263ACA832464FF2600983B56 /* Products */,
+				263ACAD02465411D00983B56 /* UIImagePicker */,
+				263ACACF2465411D00983B56 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		263ACA832464FF2600983B56 /* Products */ = {
+		263ACACF2465411D00983B56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				263ACA822464FF2600983B56 /* AVAudioPlayer.app */,
+				263ACACE2465411D00983B56 /* UIImagePicker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		263ACA842464FF2600983B56 /* AVAudioPlayer */ = {
+		263ACAD02465411D00983B56 /* UIImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				263ACA9924651D7400983B56 /* pic1.png */,
-				263ACA9A24651D7400983B56 /* pic2.png */,
-				263ACA9B24651D7500983B56 /* pic3.png */,
-				263ACA9C24651D7500983B56 /* pic4.png */,
-				263ACA972465188B00983B56 /* sky_of_night.mp3 */,
-				263ACA852464FF2600983B56 /* AppDelegate.swift */,
-				263ACA872464FF2600983B56 /* ViewController.swift */,
-				263ACA892464FF2600983B56 /* Main.storyboard */,
-				263ACA8C2464FF2800983B56 /* Assets.xcassets */,
-				263ACA8E2464FF2800983B56 /* LaunchScreen.storyboard */,
-				263ACA912464FF2800983B56 /* Info.plist */,
+				263ACAD12465411D00983B56 /* AppDelegate.swift */,
+				263ACAD32465411D00983B56 /* ViewController.swift */,
+				263ACAD52465411D00983B56 /* Main.storyboard */,
+				263ACAD82465412100983B56 /* Assets.xcassets */,
+				263ACADA2465412100983B56 /* LaunchScreen.storyboard */,
+				263ACADD2465412100983B56 /* Info.plist */,
 			);
-			path = AVAudioPlayer;
+			path = UIImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		263ACA812464FF2600983B56 /* AVAudioPlayer */ = {
+		263ACACD2465411D00983B56 /* UIImagePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 263ACA942464FF2800983B56 /* Build configuration list for PBXNativeTarget "AVAudioPlayer" */;
+			buildConfigurationList = 263ACAE02465412100983B56 /* Build configuration list for PBXNativeTarget "UIImagePicker" */;
 			buildPhases = (
-				263ACA7E2464FF2600983B56 /* Sources */,
-				263ACA7F2464FF2600983B56 /* Frameworks */,
-				263ACA802464FF2600983B56 /* Resources */,
+				263ACACA2465411D00983B56 /* Sources */,
+				263ACACB2465411D00983B56 /* Frameworks */,
+				263ACACC2465411D00983B56 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AVAudioPlayer;
-			productName = AVAudioPlayer;
-			productReference = 263ACA822464FF2600983B56 /* AVAudioPlayer.app */;
+			name = UIImagePicker;
+			productName = UIImagePicker;
+			productReference = 263ACACE2465411D00983B56 /* UIImagePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		263ACA7A2464FF2600983B56 /* Project object */ = {
+		263ACAC62465411D00983B56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = xim;
 				TargetAttributes = {
-					263ACA812464FF2600983B56 = {
+					263ACACD2465411D00983B56 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 263ACA7D2464FF2600983B56 /* Build configuration list for PBXProject "AVAudioPlayer" */;
+			buildConfigurationList = 263ACAC92465411D00983B56 /* Build configuration list for PBXProject "UIImagePicker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,59 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 263ACA792464FF2600983B56;
-			productRefGroup = 263ACA832464FF2600983B56 /* Products */;
+			mainGroup = 263ACAC52465411D00983B56;
+			productRefGroup = 263ACACF2465411D00983B56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				263ACA812464FF2600983B56 /* AVAudioPlayer */,
+				263ACACD2465411D00983B56 /* UIImagePicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		263ACA802464FF2600983B56 /* Resources */ = {
+		263ACACC2465411D00983B56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263ACA902464FF2800983B56 /* LaunchScreen.storyboard in Resources */,
-				263ACA9D24651D7500983B56 /* pic1.png in Resources */,
-				263ACA8D2464FF2800983B56 /* Assets.xcassets in Resources */,
-				263ACAA024651D7500983B56 /* pic4.png in Resources */,
-				263ACA982465188B00983B56 /* sky_of_night.mp3 in Resources */,
-				263ACA8B2464FF2600983B56 /* Main.storyboard in Resources */,
-				263ACA9E24651D7500983B56 /* pic2.png in Resources */,
-				263ACA9F24651D7500983B56 /* pic3.png in Resources */,
+				263ACADC2465412100983B56 /* LaunchScreen.storyboard in Resources */,
+				263ACAD92465412100983B56 /* Assets.xcassets in Resources */,
+				263ACAD72465411D00983B56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		263ACA7E2464FF2600983B56 /* Sources */ = {
+		263ACACA2465411D00983B56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				263ACA882464FF2600983B56 /* ViewController.swift in Sources */,
-				263ACA862464FF2600983B56 /* AppDelegate.swift in Sources */,
+				263ACAD42465411D00983B56 /* ViewController.swift in Sources */,
+				263ACAD22465411D00983B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		263ACA892464FF2600983B56 /* Main.storyboard */ = {
+		263ACAD52465411D00983B56 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				263ACA8A2464FF2600983B56 /* Base */,
+				263ACAD62465411D00983B56 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		263ACA8E2464FF2800983B56 /* LaunchScreen.storyboard */ = {
+		263ACADA2465412100983B56 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				263ACA8F2464FF2800983B56 /* Base */,
+				263ACADB2465412100983B56 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		263ACA922464FF2800983B56 /* Debug */ = {
+		263ACADE2465412100983B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		263ACA932464FF2800983B56 /* Release */ = {
+		263ACADF2465412100983B56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,34 +278,34 @@
 			};
 			name = Release;
 		};
-		263ACA952464FF2800983B56 /* Debug */ = {
+		263ACAE12465412100983B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AVAudioPlayer/Info.plist;
+				INFOPLIST_FILE = UIImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xim.macnpc.AVAudioPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = xim.macnpc.UIImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		263ACA962464FF2800983B56 /* Release */ = {
+		263ACAE22465412100983B56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AVAudioPlayer/Info.plist;
+				INFOPLIST_FILE = UIImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xim.macnpc.AVAudioPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = xim.macnpc.UIImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -335,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		263ACA7D2464FF2600983B56 /* Build configuration list for PBXProject "AVAudioPlayer" */ = {
+		263ACAC92465411D00983B56 /* Build configuration list for PBXProject "UIImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				263ACA922464FF2800983B56 /* Debug */,
-				263ACA932464FF2800983B56 /* Release */,
+				263ACADE2465412100983B56 /* Debug */,
+				263ACADF2465412100983B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		263ACA942464FF2800983B56 /* Build configuration list for PBXNativeTarget "AVAudioPlayer" */ = {
+		263ACAE02465412100983B56 /* Build configuration list for PBXNativeTarget "UIImagePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				263ACA952464FF2800983B56 /* Debug */,
-				263ACA962464FF2800983B56 /* Release */,
+				263ACAE12465412100983B56 /* Debug */,
+				263ACAE22465412100983B56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 263ACA7A2464FF2600983B56 /* Project object */;
+	rootObject = 263ACAC62465411D00983B56 /* Project object */;
 }
