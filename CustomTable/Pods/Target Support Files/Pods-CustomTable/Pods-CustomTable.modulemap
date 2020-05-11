@@ -1,0 +1,6 @@
+framework module Pods_CustomTable {
+  umbrella header "Pods-CustomTable-umbrella.h"
+
+  export *
+  module * { export * }
+}
