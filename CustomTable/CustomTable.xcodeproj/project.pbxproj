@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26257820246A3B5F002FF0EB /* TestVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2625781F246A3B5F002FF0EB /* TestVO.swift */; };
+		26257829246A46B8002FF0EB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26257828246A46B8002FF0EB /* Realm.framework */; };
+		2625782B246A46BF002FF0EB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625782A246A46BF002FF0EB /* RealmSwift.framework */; };
+		2625782D246A46C5002FF0EB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625782C246A46C5002FF0EB /* Alamofire.framework */; };
+		2625782F246A46C5002FF0EB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2625782E246A46C5002FF0EB /* SwiftyJSON.framework */; };
 		26BA35D02469370F00033727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA35CF2469370F00033727 /* AppDelegate.swift */; };
 		26BA35D22469370F00033727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA35D12469370F00033727 /* ViewController.swift */; };
 		26BA35D52469370F00033727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BA35D32469370F00033727 /* Main.storyboard */; };
@@ -73,6 +78,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2625781F246A3B5F002FF0EB /* TestVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVO.swift; sourceTree = "<group>"; };
+		26257821246A4614002FF0EB /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26257825246A461B002FF0EB /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26257828246A46B8002FF0EB /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2625782A246A46BF002FF0EB /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2625782C246A46C5002FF0EB /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2625782E246A46C5002FF0EB /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		269CA0A924694D1B00B0ACC2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		26BA35CC2469370F00033727 /* CustomTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BA35CF2469370F00033727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2625782D246A46C5002FF0EB /* Alamofire.framework in Frameworks */,
+				2625782F246A46C5002FF0EB /* SwiftyJSON.framework in Frameworks */,
+				2625782B246A46BF002FF0EB /* RealmSwift.framework in Frameworks */,
+				26257829246A46B8002FF0EB /* Realm.framework in Frameworks */,
 				93C7CCD9B0E54CA19C4ECFC5 /* Pods_CustomTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +125,6 @@
 				D647420957553A17A27FAC71 /* Pods-CustomTable.debug.xcconfig */,
 				46132735AA6E4E0BB2F97680 /* Pods-CustomTable.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +145,8 @@
 		26BA35C32469370F00033727 = {
 			isa = PBXGroup;
 			children = (
+				26257825246A461B002FF0EB /* RealmSwift.framework */,
+				26257821246A4614002FF0EB /* Realm.framework */,
 				26BA35CE2469370F00033727 /* CustomTable */,
 				26BA35CD2469370F00033727 /* Products */,
 				269CA0A924694D1B00B0ACC2 /* Alamofire.xcodeproj */,
@@ -149,6 +166,7 @@
 		26BA35CE2469370F00033727 /* CustomTable */ = {
 			isa = PBXGroup;
 			children = (
+				2625781F246A3B5F002FF0EB /* TestVO.swift */,
 				26BA35E524693BC400033727 /* pic1.png */,
 				26BA35E324693BC400033727 /* pic2.png */,
 				26BA35E424693BC400033727 /* pic3.png */,
@@ -167,6 +185,10 @@
 		AF81120E97BF17F4BE768E18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2625782C246A46C5002FF0EB /* Alamofire.framework */,
+				2625782E246A46C5002FF0EB /* SwiftyJSON.framework */,
+				2625782A246A46BF002FF0EB /* RealmSwift.framework */,
+				26257828246A46B8002FF0EB /* Realm.framework */,
 				D9059F64343BFA1117712325 /* Pods_CustomTable.framework */,
 			);
 			name = Frameworks;
@@ -348,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26257820246A3B5F002FF0EB /* TestVO.swift in Sources */,
 				26BA35D22469370F00033727 /* ViewController.swift in Sources */,
 				26BA35EA24693E4D00033727 /* MovieVO.swift in Sources */,
 				26BA35D02469370F00033727 /* AppDelegate.swift in Sources */,

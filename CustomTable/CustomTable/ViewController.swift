@@ -8,17 +8,18 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
+import RealmSwift
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController:IViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    let testVO = TestVO()
     let height:CGFloat = 100
+    let realm = try! Realm()
     
     var page = 1
-    
-    lazy var list: [MovieVO] = {
-        var dataList = [MovieVO]()
-        return dataList
-    }()
+    var arrRes = [[String: AnyObject]]()
     
     @IBOutlet weak var btnMore: UIButton!
     @IBOutlet weak var customCellTableView: UITableView!
@@ -28,29 +29,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.callMovieAPI()
+        callMovieAPI()
+        addTestData()
+        setUpUI()
         customCellTableView.delegate = self
         customCellTableView.dataSource = self
-        callMovieAPI()
+        self.customCellTableView.tableFooterView = UIView()
     }
 
+    func setUpUI() {
+        title = "TestVO"
+        customCellTableView.register(UITableViewCell.self, forCellReuseIdentifier: "CustomCell")
+    }
+    
     @IBAction func btnMoreHandler(_ sender: UIButton) {
         self.page += 1
         
 //        self.tableView.reloadData()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.list.count
+        return self.arrRes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row = self.list[indexPath.row]
+        let row = arrRes[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCellTableViewCell
         
-        cell.lblTitle.text = row.title
-        cell.lblText.text = row.description
-        cell.lblRating.text = "\(row.rating!)"
+        cell.lblTitle?.text = row["name"] as? String
+        cell.lblText?.text = row["email"] as? String
         
         return cell
     }
@@ -59,13 +66,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return height
     }
     
+    func addTestData() {
+        
+        for index in 0..<arrRes.count {
+            var getData = arrRes[index]
+            testVO.id = getData["id"] as? String
+            testVO.name = getData["name"] as? String
+            testVO.email = getData["email"] as? String
+            testVO.gender = getData["gender"] as? String
+            
+           realm.add(testVO)
+        }
+        
+        
+    }
+    
     func callMovieAPI() {
-        Alamofire.request("https://api.github.com/users", method: .get, parameters: [:], encoding: URLEncoding.default, headers: ["Content_Type":"application/json", "Accept":"application/json"])
-            .validate(statusCode: 200..<300)
-            .responseJSON{(response) in
-                if let MyJSON = response.result.value {
-                    print(MyJSON)
+        Alamofire.request("https://api.androidhive.info/contacts/").responseJSON{ (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                
+                if let resData = swiftyJsonVar["contacts"].arrayObject {
+                    self.arrRes = resData as! [[String: AnyObject]]
                 }
+                if self.arrRes.count > 0 {
+                    self.customCellTableView.reloadData()
+                }
+                print(self.arrRes)
+            }
         }
     }
 }
