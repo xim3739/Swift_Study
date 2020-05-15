@@ -13,6 +13,4 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var lblCertified: UILabel!
     @IBOutlet weak var lblIsolated: UILabel!
     @IBOutlet weak var lblPercentage: UILabel!
-    
-
 }

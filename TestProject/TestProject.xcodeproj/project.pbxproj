@@ -17,6 +17,9 @@
 		262578D3246A984C002FF0EB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262578D2246A984C002FF0EB /* CustomTableViewCell.swift */; };
 		262578D5246A9B37002FF0EB /* DomesticVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262578D4246A9B37002FF0EB /* DomesticVO.swift */; };
 		262578D8246BD633002FF0EB /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262578D7246BD633002FF0EB /* CustomAlertViewController.swift */; };
+		262578DE246D3660002FF0EB /* DomesticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262578DD246D3660002FF0EB /* DomesticData.swift */; };
+		262578E0246D4355002FF0EB /* NationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262578DF246D4355002FF0EB /* NationModel.swift */; };
+		262578E2246E1550002FF0EB /* CustomTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262578E1246E1550002FF0EB /* CustomTableViewCell2.swift */; };
 		5C60800C400420159A141114 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5BD62E0C7165C59811C3AD /* Pods_TestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		262578D2246A984C002FF0EB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		262578D4246A9B37002FF0EB /* DomesticVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomesticVO.swift; sourceTree = "<group>"; };
 		262578D7246BD633002FF0EB /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		262578DD246D3660002FF0EB /* DomesticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomesticData.swift; sourceTree = "<group>"; };
+		262578DF246D4355002FF0EB /* NationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationModel.swift; sourceTree = "<group>"; };
+		262578E1246E1550002FF0EB /* CustomTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell2.swift; sourceTree = "<group>"; };
 		387DB93BDBD1F32079394F56 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		3D5BD62E0C7165C59811C3AD /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		834C7E7C37886D5340B6E95A /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,11 +81,14 @@
 				262578B6246A8800002FF0EB /* ViewController.swift */,
 				262578D4246A9B37002FF0EB /* DomesticVO.swift */,
 				262578B8246A8800002FF0EB /* Main.storyboard */,
+				262578DF246D4355002FF0EB /* NationModel.swift */,
 				262578D7246BD633002FF0EB /* CustomAlertViewController.swift */,
 				262578D2246A984C002FF0EB /* CustomTableViewCell.swift */,
+				262578E1246E1550002FF0EB /* CustomTableViewCell2.swift */,
 				262578D0246A93D4002FF0EB /* EditViewController.swift */,
 				262578CE246A9052002FF0EB /* ViewController3.swift */,
 				262578CC246A8F69002FF0EB /* ViewController2.swift */,
+				262578DD246D3660002FF0EB /* DomesticData.swift */,
 				262578BB246A8802002FF0EB /* Assets.xcassets */,
 				262578C0246A8802002FF0EB /* Info.plist */,
 			);
@@ -217,12 +226,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262578E0246D4355002FF0EB /* NationModel.swift in Sources */,
+				262578E2246E1550002FF0EB /* CustomTableViewCell2.swift in Sources */,
 				262578D5246A9B37002FF0EB /* DomesticVO.swift in Sources */,
 				262578D3246A984C002FF0EB /* CustomTableViewCell.swift in Sources */,
 				262578D1246A93D4002FF0EB /* EditViewController.swift in Sources */,
 				262578B7246A8800002FF0EB /* ViewController.swift in Sources */,
 				262578D8246BD633002FF0EB /* CustomAlertViewController.swift in Sources */,
 				262578B5246A8800002FF0EB /* AppDelegate.swift in Sources */,
+				262578DE246D3660002FF0EB /* DomesticData.swift in Sources */,
 				262578CF246A9052002FF0EB /* ViewController3.swift in Sources */,
 				262578CD246A8F69002FF0EB /* ViewController2.swift in Sources */,
 			);
