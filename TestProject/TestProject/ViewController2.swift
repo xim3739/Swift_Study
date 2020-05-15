@@ -19,7 +19,7 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        getData = DomesticData.init(params: "nation", tableView: self.tableView, req: "global")
+        getData = DomesticData.init(params: "nation", tableView: self.tableView, req: "global", viewController: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,20 +29,18 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "globalTableViewCell", for: indexPath) as! CustomTableViewCell2
         let locale = getData.foreignLocations[indexPath.row]
-        print(getData.foreignLocations[indexPath.row])
         
         cell.labelGlobalLocale.text = locale
         
         if let nationModel = getData.nations[locale] {
             cell.labelGlobalCrtified.text = String(nationModel.certified)
-            cell.labelGlobalIncreased.text = String(nationModel.increased)
             cell.labelGlobalDead.text = String(nationModel.dead)
             
             tableView.allowsSelection = true
+            
             return cell
         } else {
             cell.labelGlobalCrtified.text = "loading…"
-            cell.labelGlobalIncreased.text = "loading…"
             cell.labelGlobalDead.text = "loading…"
             
             tableView.allowsSelection = false

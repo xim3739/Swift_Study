@@ -9,7 +9,6 @@
 import UIKit
 
 class CustomTableViewCell2: UITableViewCell {
-    @IBOutlet weak var labelGlobalIncreased: UILabel!
     @IBOutlet weak var labelGlobalCrtified: UILabel!
     @IBOutlet weak var labelGlobalDead: UILabel!
     @IBOutlet weak var labelGlobalLocale: UILabel!

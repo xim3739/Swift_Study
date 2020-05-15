@@ -21,23 +21,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         tableView.delegate = self
         tableView.dataSource = self
-        getData = DomesticData.init(params: "locale", tableView: self.tableView, req: "korea")
-    }
+        getData = DomesticData.init(params: "locale", tableView: self.tableView, req: "korea", viewController: self)
     
-    //table View Loadding Toast Message
-    override func viewDidAppear(_ animated: Bool) {
-        if !tableView.allowsSelection {
-            let toastAlert = UIAlertController(title: "Loading...", message: "Not Finish Loading", preferredStyle: .alert)
-            toastAlert.view.backgroundColor = UIColor.black
-            toastAlert.view.alpha = 0.6
-            toastAlert.view.layer.cornerRadius = 15
-            
-            self.present(toastAlert, animated: true)
-            
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
-                toastAlert.dismiss(animated: true, completion: nil)
-            }
-        }
     }
     
     //table View row count
@@ -58,6 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.lblPercentage.text = String(domestic.percentage)
             
             tableView.allowsSelection = true
+            
             return cell
         }
         else {
